@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### Notebook to genereate binned cross sections from TC output
+# ### Notebook to generate binned cross sections from TC output
 # 
 # Assumes output is in a single netcdf file on pressure levels.
 # 
-# James Ruppert  
+# Original by James Ruppert  
 # jruppert@ou.edu  
 # 4/23/22
+
+# Current version modified by Theresa Lincheck
+# 7/11/22
 
 
 from netCDF4 import Dataset
@@ -17,7 +20,10 @@ import matplotlib.pyplot as plt
 from thermo_functions import theta_dry, density_moist
 import sys
 
+#%%
+print("testing for saved changes")
 
+#%%
 # #### Bin variable selection
 
 # Indexing variable
@@ -38,6 +44,7 @@ fillvar_select = 'lwcrf'#'thprm'
 #  fig_extra='_strat'
 #fig_extra=''
 
+#%%
 
 # #### Test/storm selection
 
